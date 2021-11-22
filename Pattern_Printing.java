@@ -61,11 +61,38 @@ public class PatternLearning {
             System.out.println();
         }
     }
+    
+    /*Patter 3: 
+    
+        Print the following pattern
+    
+        * * * * *
+        * * * * *
+        * * * * *
+        * * * * *
+        * * * * *
+    */
+    
+    static void pattern3(int val){
+        
+        for(int row=1; row<=val; row++)
+        {
+            for (int col=1; col<=val; col++)
+            {
+                System.out.print("*");
+                
+            }
+            System.out.println();
+        }
+    }
+    
     public static void main(String args[]) {
       
         //Draw the pattern by passing the row count to the function:
         pattern1(4);
         pattern2(4);
+        System.out.println("=======================================");
+        pattern3(5);
       
     }
 }
